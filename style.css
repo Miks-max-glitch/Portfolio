@@ -282,22 +282,39 @@ body {
 
 /* ================= RESPONSIVE ================= */
 @media (max-width: 768px) {
-  .navbar {
-    flex-direction: column;
-    gap: 0.75rem;
-    padding: 1rem;
+  header {
+    padding: 0.75rem 1rem;
   }
 
-  .navbar nav {
+  .navbar {
+    flex-direction: column;
+    align-items: center;
+    gap: 0.5rem;
+  }
+
+  .logo {
+    font-size: 1.6rem;
+  }
+
+  .nav-links {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
+    gap: 0.75rem 1.25rem;
   }
 
-  .navbar a {
-    margin: 0.25rem 0.75rem;
+  .nav-links a {
+    font-size: 0.9rem;
   }
 }
+@media (max-width: 768px) {
+  .hero {
+    height: auto;
+    min-height: 100svh; /* mobile-safe viewport */
+    padding: 4.5rem 1.5rem 7rem;
+  }
+}
+
 
 
 
