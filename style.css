@@ -282,40 +282,12 @@ body {
 
 /* ================= RESPONSIVE ================= */
 @media (max-width: 768px) {
-  header {
-    padding: 0.75rem 1rem;
-  }
-
-  .navbar {
-    flex-direction: column;
-    align-items: center;
-    gap: 0.5rem;
-  }
-
-  .logo {
-    font-size: 1.6rem;
-  }
-
-  .nav-links {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 0.75rem 1.25rem;
-  }
-
-  .nav-links a {
-    font-size: 0.9rem;
+  .about-container {
+    grid-template-columns: 1fr;
   }
 }
-@media (max-width: 768px) {
-  .hero {
-    height: auto;
-    min-height: 100svh; /* mobile-safe viewport */
-    padding: 4.5rem 1.5rem 7rem;
-  }
+.navbar a.active {
+  color: var(--primary);
 }
-
-
-
 
 
